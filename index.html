@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koya's Flowers - Ramos 100% Personalizados</title>
+  
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="estilos.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO Y NAVEGACIÓN -->
+  <header class="navbar">
+    <nav class="container nav-container">
+      <a href="#" class="logo-container">
+        <figure class="logo-avatar">
+          <i class="fa-solid fa-gem" style="color: #1E3A8A; font-size: 1.2rem;"></i>
+        </figure>
+        <span class="logo-text">Koya's Flowers</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#personalizar">Diseña tu Ramo</a></li>
+        <li><a href="#galeria">Inspiración</a></li>
+        <li><a href="#testimonios">Opiniones</a></li>
+        <li><a href="#faq">Preguntas</a></li>
+      </ul>
+      <a href="#personalizar" class="btn btn-primary"><i class="fa-solid fa-wand-magic-sparkles"></i> Crear Ramo</a>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+
+    <!-- SECCIÓN HERO -->
+    <section class="hero" id="inicio">
+      <section class="container">
+        <article class="hero-content">
+          <ul class="hero-badges">
+            <li class="badge"><i class="fa-solid fa-star"></i> 100% Personalizado</li>
+            <li class="badge"><i class="fa-solid fa-heart"></i> Hecho a Mano</li>
+          </ul>
+          <h1>El Ramo Perfecto Para Expresar Lo Que Sientes</h1>
+          <p>Diseñamos ramos únicos adaptados totalmente a tus gustos, paleta de colores preferida y ocasión especial. Sorprende con rosas eternas, naturales y detalles mágicos.</p>
+          <nav style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="#personalizar" class="btn btn-primary"><i class="fa-solid fa-pen-ruler"></i> Empezar a Diseñar</a>
+            <a href="https://wa.me/522294332396?text=Hola%20Koya's%20Flowers,%20quiero%20información" target="_blank" class="btn btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> Chat Directo</a>
+          </nav>
+        </article>
+        
+        <aside>
+          <article class="hero-card">
+            <!-- Ilustración Koya -->
+            <figure class="koala-illustration">
+              <figure class="koala-head">
+                <figure class="koala-ear left"><figure class="koala-ear-inner"></figure></figure>
+                <figure class="koala-ear right"><figure class="koala-ear-inner"></figure></figure>
+                <figure class="koala-face">
+                  <figure class="koala-eyes">
+                    <figure class="koala-eye"></figure>
+                    <figure class="koala-eye"></figure>
+                  </figure>
+                  <figure class="koala-nose"></figure>
+                </figure>
+              </figure>
+              <figcaption class="koala-bouquet">💐💙🖤</figcaption>
+            </figure>
+            <h3>Un toque tierno y especial</h3>
+            <p style="color: var(--koya-gray); font-size: 0.9rem; margin-top: 0.5rem;">Creamos tu diseño soñado en los tonos de tus colores favoritos.</p>
+          </article>
+        </aside>
+      </section>
+    </section>
+
+    <!-- PASO A PASO -->
+    <section class="steps">
+      <section class="container">
+        <header class="section-title">
+          <h2>¿Cómo Funciona Tu Pedido?</h2>
+          <p>Pedir tu ramo personalizado es súper sencillo</p>
+        </header>
+        <section class="steps-grid">
+          <article class="step-card">
+            <figure class="step-icon"><i class="fa-solid fa-sliders"></i></figure>
+            <h3>1. Elige los detalles</h3>
+            <p>Selecciona el tamaño, los colores de tus flores, envoltura y extras.</p>
+          </article>
+          <article class="step-card">
+            <figure class="step-icon"><i class="fa-brands fa-whatsapp"></i></figure>
+            <h3>2. Envía a WhatsApp</h3>
+            <p>La página generará automáticamente el resumen de tu ramo personalizado.</p>
+          </article>
+          <article class="step-card">
+            <figure class="step-icon"><i class="fa-solid fa-hands-holding-circle"></i></figure>
+            <h3>3. Lo preparamos</h3>
+            <p>Confeccionamos tu ramo con dedicación y te enviamos fotografía previa.</p>
+          </article>
+          <article class="step-card">
+            <figure class="step-icon"><i class="fa-solid fa-truck-fast"></i></figure>
+            <h3>4. Entrega / Recolección</h3>
+            <p>Recíbelo en tu domicilio o recógelo listo para regalar.</p>
+          </article>
+        </section>
+      </section>
+    </section>
+
+    <!-- CONFIGURADOR INTERACTIVO -->
+    <section class="builder-section" id="personalizar">
+      <section class="container">
+        <header class="section-title">
+          <h2>Diseña Tu Ramo Personalizado</h2>
+          <p>Configura las opciones según la idea que tienes en mente</p>
+        </header>
+
+        <section class="builder-layout">
+          <!-- Formulario Opciones -->
+          <form class="builder-options" onsubmit="event.preventDefault();">
+            
+            <!-- Tamaño -->
+            <fieldset class="option-group">
+              <legend><i class="fa-solid fa-expand"></i> 1. Tamaño del Ramo</legend>
+              <ul class="grid-selector">
+                <li class="card-option active" onclick="selectOption('size', 'Chico (12 flores)', 250, this)">
+                  <i class="fa-solid fa-spa"></i>
+                  <strong>Chico</strong>
+                  <p style="font-size:0.8rem; color:var(--koya-gray);">12 Flores</p>
+                </li>
+                <li class="card-option" onclick="selectOption('size', 'Mediano (24 flores)', 450, this)">
+                  <i class="fa-solid fa-fan"></i>
+                  <strong>Mediano</strong>
+                  <p style="font-size:0.8rem; color:var(--koya-gray);">24 Flores</p>
+                </li>
+                <li class="card-option" onclick="selectOption('size', 'Buchón (50+ flores)', 850, this)">
+                  <i class="fa-solid fa-crown"></i>
+                  <strong>Buchón</strong>
+                  <p style="font-size:0.8rem; color:var(--koya-gray);">50+ Flores</p>
+                </li>
+              </ul>
+            </fieldset>
+
+            <!-- Colores -->
+            <fieldset class="option-group">
+              <legend><i class="fa-solid fa-palette"></i> 2. Paleta de Colores</legend>
+              <ul class="color-circles">
+                <li><button type="button" class="color-btn blue active" title="Azul Real / Celeste" onclick="selectColor('Azules (Tema Koya)', this)"></button></li>
+                <li><button type="button" class="color-btn purple" title="Morado / Lavanda" onclick="selectColor('Morados / Lavanda', this)"></button></li>
+                <li><button type="button" class="color-btn black" title="Negro Elegante" onclick="selectColor('Negro Elegante', this)"></button></li>
+                <li><button type="button" class="color-btn mix" title="Combinación Especial" onclick="selectColor('Mezcla de Colores (Azul/Morado/Negro)', this)"></button></li>
+              </ul>
+            </fieldset>
+
+            <!-- Envoltura -->
+            <fieldset class="option-group">
+              <legend><i class="fa-solid fa-gift"></i> 3. Estilo de Envoltura</legend>
+              <ul class="grid-selector">
+                <li class="card-option active" onclick="selectOption('wrapper', 'Papel Coreano Tipo Koya', 0, this)">
+                  <strong>Papel Coreano</strong>
+                </li>
+                <li class="card-option" onclick="selectOption('wrapper', 'Papel Kraft Elegante', 0, this)">
+                  <strong>Papel Kraft</strong>
+                </li>
+                <li class="card-option" onclick="selectOption('wrapper', 'Envoltura con Luz LED (+ $50)', 50, this)">
+                  <strong>Con Luces LED</strong>
+                </li>
+              </ul>
+            </fieldset>
+
+            <!-- Adicionales -->
+            <fieldset class="option-group">
+              <legend><i class="fa-solid fa-plus"></i> 4. Añadir Detalles Extra</legend>
+              <ul class="checkbox-list">
+                <li class="checkbox-item">
+                  <label><input type="checkbox" onchange="toggleExtra('Peluche de Koya/BT21', 150, this)"> Peluche Temático</label>
+                  <strong>+$150</strong>
+                </li>
+                <li class="checkbox-item">
+                  <label><input type="checkbox" onchange="toggleExtra('Caja de Chocolates', 80, this)"> Caja de Chocolates</label>
+                  <strong>+$80</strong>
+                </li>
+                <li class="checkbox-item">
+                  <label><input type="checkbox" onchange="toggleExtra('Mariposas / Coronita', 40, this)"> Mariposas / Coronita</label>
+                  <strong>+$40</strong>
+                </li>
+              </ul>
+            </fieldset>
+
+            <!-- Dedicatoria -->
+            <fieldset class="option-group">
+              <legend><i class="fa-solid fa-envelope-open-text"></i> 5. Dedicatoria Especial</legend>
+              <input type="text" id="custom-note" class="form-input" placeholder="Escribe el mensaje para la tarjeta (Opcional)..." oninput="updateNote()">
+            </fieldset>
+
+          </form>
+
+          <!-- Resumen del Pedido -->
+          <aside class="builder-summary">
+            <header class="summary-header">
+              <h3>Tu Ramo Personalizado</h3>
+              <p style="font-size: 0.85rem; color: var(--koya-gray);">Resumen del pedido</p>
+            </header>
+
+            <dl class="summary-list">
+              <dt>Tamaño:</dt>
+              <dd id="summary-size">Chico (12 flores)</dd>
+
+              <dt>Color principal:</dt>
+              <dd id="summary-color">Azules (Tema Koya)</dd>
+
+              <dt>Envoltura:</dt>
+              <dd id="summary-wrapper">Papel Coreano</dd>
+
+              <dt>Extras:</dt>
+              <dd id="summary-extras">Ninguno</dd>
+
+              <dt>Nota:</dt>
+              <dd id="summary-note">Sin nota</dd>
+            </dl>
+
+            <output class="price-total">
+              <span>Total aprox:</span>
+              <span id="summary-price">$250 MXN</span>
+            </output>
+
+            <button type="button" onclick="sendToWhatsApp()" class="btn btn-whatsapp" style="width: 100%; justify-content: center;">
+              <i class="fa-brands fa-whatsapp" style="font-size: 1.3rem;"></i> Pedir por WhatsApp
+            </button>
+          </aside>
+
+        </section>
+      </section>
+    </section>
+
+    <!-- GALERÍA DE INSPIRACIÓN -->
+    <section class="gallery" id="galeria">
+      <section class="container">
+        <header class="section-title">
+          <h2>Galería de Inspiración</h2>
+          <p>Algunos de los estilos y combinaciones que hemos creado</p>
+        </header>
+
+        <section class="gallery-grid">
+          <article class="gallery-card">
+            <figure class="gallery-img" style="background-image: url('https://images.unsplash.com/photo-1563241527-3004b7be0ffd?auto=format&fit=crop&w=600&q=80');"></figure>
+            <header class="gallery-info">
+              <h3>Ramo Azul Mágico Koya</h3>
+              <p>Rosas azules intensas con envoltura en tono lavanda y detalles de mariposas.</p>
+            </header>
+          </article>
+          <article class="gallery-card">
+            <figure class="gallery-img" style="background-image: url('https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=600&q=80');"></figure>
+            <header class="gallery-info">
+              <h3>Ramo Místico Morado</h3>
+              <p>Tonos lavanda y violeta combinados con envoltura negra y cinta brillante.</p>
+            </header>
+          </article>
+          <article class="gallery-card">
+            <figure class="gallery-img" style="background-image: url('https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?auto=format&fit=crop&w=600&q=80');"></figure>
+            <header class="gallery-info">
+              <h3>Ramo Elegante Negro & Azul</h3>
+              <p>Una combinación gótica chic con rosas oscuras y toques de luz LED.</p>
+            </header>
+          </article>
+        </section>
+      </section>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="reviews" id="testimonios">
+      <section class="container">
+        <header class="section-title">
+          <h2>Lo Que Dicen Nuestros Clientes</h2>
+          <p>Historias de entregas especiales y sonrisas</p>
+        </header>
+
+        <section class="reviews-grid">
+          <article class="review-card">
+            <figure class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></figure>
+            <blockquote>"El ramo con temática de Koya sobrepasó mis expectativas. Las rosas azules lucían perfectas y la atención por WhatsApp fue súper linda."</blockquote>
+            <cite class="author">- Mariana G.</cite>
+          </article>
+          <article class="review-card">
+            <figure class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></figure>
+            <blockquote>"Pedí un ramo personalizado con rosas negras y moradas para mi aniversario. A mi novia le encantó, llegó súper puntual."</blockquote>
+            <cite class="author">- Carlos R.</cite>
+          </article>
+          <article class="review-card">
+            <figure class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></figure>
+            <blockquote>"La opción de elegir cada detalle hace que la experiencia sea muy especial. 100% recomendados en Koya's Flowers."</blockquote>
+            <cite class="author">- Sofía M.</cite>
+          </article>
+        </section>
+      </section>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES -->
+    <section class="faq" id="faq">
+      <section class="container">
+        <header class="section-title">
+          <h2>Preguntas Frecuentes</h2>
+          <p>Resolvemos tus dudas antes de realizar tu pedido</p>
+        </header>
+
+        <dl class="faq-list">
+          <dt>¿Con cuánto tiempo de anticipación debo hacer mi pedido? <i class="fa-solid fa-chevron-down"></i></dt>
+          <dd>Recomendamos pedirlo con 24 a 48 horas de anticipación para garantizar la preparación ideal de tus flores y detalles.</dd>
+
+          <dt>¿Tienen entregas a domicilio? <i class="fa-solid fa-chevron-down"></i></dt>
+          <dd>Sí, realizamos entregas a domicilio con costo adicional dependiendo de la zona o puedes recoger en nuestro punto de entrega.</dd>
+
+          <dt>¿Puedo elegir colores que no estén en el catálogo? <i class="fa-solid fa-chevron-down"></i></dt>
+          <dd>¡Claro que sí! Al mandarnos mensaje por WhatsApp podemos coordinar cualquier tipo de flor o combinación especial que tengas en mente.</dd>
+        </dl>
+      </section>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <section class="container">
+      <section class="footer-grid">
+        <article class="footer-brand">
+          <h2>Koya's Flowers</h2>
+          <p>Flores y ramos 100% personalizados hechos con amor y creatividad.</p>
+          <nav class="social-links">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          </nav>
+        </article>
+
+        <nav>
+          <h4 style="margin-bottom: 1rem; color: var(--koya-blue-light);">Enlaces Rápidos</h4>
+          <ul style="list-style: none; line-height: 2;">
+            <li><a href="#inicio" style="color: #94A3B8; text-decoration: none;">Inicio</a></li>
+            <li><a href="#personalizar" style="color: #94A3B8; text-decoration: none;">Diseña tu Ramo</a></li>
+            <li><a href="#galeria" style="color: #94A3B8; text-decoration: none;">Galería</a></li>
+          </ul>
+        </nav>
+
+        <section>
+          <h4 style="margin-bottom: 1rem; color: var(--koya-blue-light);">Contacto</h4>
+          <p style="color: #94A3B8;"><i class="fa-solid fa-phone"></i> +52 229 433 2396</p>
+          <p style="color: #94A3B8;"><i class="fa-solid fa-envelope"></i> contacto@koyasflowers.com</p>
+        </section>
+      </section>
+
+      <p class="footer-bottom">&copy; 2026 Koya's Flowers. Todos los derechos reservados.</p>
+    </section>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE WHATSAPP -->
+  <a href="https://wa.me/522294332396?text=Hola%20Koya's%20Flowers,%20quisiera%20pedir%20información" class="float-whatsapp" target="_blank" title="Contactar por WhatsApp" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    let orderData = {
+      size: 'Chico (12 flores)',
+      sizePrice: 250,
+      color: 'Azules (Tema Koya)',
+      wrapper: 'Papel Coreano Tipo Koya',
+      wrapperPrice: 0,
+      extras: [],
+      note: 'Sin nota'
+    };
+
+    function updateSummary() {
+      document.getElementById('summary-size').innerText = orderData.size;
+      document.getElementById('summary-color').innerText = orderData.color;
+      document.getElementById('summary-wrapper').innerText = orderData.wrapper;
+      
+      const extrasText = orderData.extras.length > 0 
+        ? orderData.extras.map(e => e.name).join(', ') 
+        : 'Ninguno';
+      document.getElementById('summary-extras').innerText = extrasText;
+
+      const extrasTotal = orderData.extras.reduce((sum, item) => sum + item.price, 0);
+      const total = orderData.sizePrice + orderData.wrapperPrice + extrasTotal;
+
+      document.getElementById('summary-price').innerText = `$${total} MXN`;
+    }
+
+    function selectOption(category, name, price, element) {
+      const parent = element.parentElement;
+      const cards = parent.querySelectorAll('.card-option');
+      cards.forEach(card => card.classList.remove('active'));
+      element.classList.add('active');
+
+      if (category === 'size') {
+        orderData.size = name;
+        orderData.sizePrice = price;
+      } else if (category === 'wrapper') {
+        orderData.wrapper = name;
+        orderData.wrapperPrice = price;
+      }
+      updateSummary();
+    }
+
+    function selectColor(colorName, element) {
+      const parent = element.parentElement;
+      const buttons = parent.querySelectorAll('.color-btn');
+      buttons.forEach(btn => btn.classList.remove('active'));
+      element.classList.add('active');
+
+      orderData.color = colorName;
+      updateSummary();
+    }
+
+    function toggleExtra(extraName, price, checkbox) {
+      if (checkbox.checked) {
+        orderData.extras.push({ name: extraName, price: price });
+      } else {
+        orderData.extras = orderData.extras.filter(item => item.name !== extraName);
+      }
+      updateSummary();
+    }
+
+    function updateNote() {
+      const text = document.getElementById('custom-note').value;
+      orderData.note = text.trim() !== '' ? text : 'Sin nota';
+      document.getElementById('summary-note').innerText = orderData.note;
+    }
+
+    function sendToWhatsApp() {
+      const phoneNumber = "522294332396";
+      
+      const extrasText = orderData.extras.length > 0 
+        ? orderData.extras.map(e => e.name).join(', ') 
+        : 'Ninguno';
+
+      const extrasTotal = orderData.extras.reduce((sum, item) => sum + item.price, 0);
+      const total = orderData.sizePrice + orderData.wrapperPrice + extrasTotal;
+
+      const message = `¡Hola *Koya's Flowers*! 🌸\n` +
+        `Quiero realizar el pedido de un ramo personalizado:\n\n` +
+        `📏 *Tamaño:* ${orderData.size}\n` +
+        `🎨 *Paleta de color:* ${orderData.color}\n` +
+        `🎁 *Envoltura:* ${orderData.wrapper}\n` +
+        `✨ *Adicionales:* ${extrasText}\n` +
+        `💌 *Dedicatoria:* "${orderData.note}"\n\n` +
+        `💰 *Total estimado:* $${total} MXN\n\n` +
+        `¿Me podrían dar los datos para confirmar mi pedido?`;
+
+      const encodedMessage = encodeURIComponent(message);
+      window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
+    }
+  </script>
+</body>
+</html>
